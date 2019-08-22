@@ -16,7 +16,14 @@ export class Songkick extends Component {
 
     getEventData = (id) => {
         const url = `https://api.songkick.com/api/3.0/metro_areas/${id}/calendar.json?apikey=pk8dcHXeCupj6Kxr`;
-        console.log(id);
+        
+        fetch(url).then(response => {
+            return response.json();
+        }).then(data => {
+            console.log(data);
+            this.setState({ eventData: data })
+        })
+
     }
 
     getLocationID = () => {
@@ -35,9 +42,24 @@ export class Songkick extends Component {
     }
     
     render() {
+        const firstTen = this.state.eventData.resultsPage && this.state.eventData.resultsPage.results.event.filter((event, index) => {
+            return index < 10;
+        }).map((event, index) => {
+            return (
+            <li>
+                <h3>{event.displayName}</h3>
+                <p>{event.venue.displayName}</p>
+                <p>{event.start.date + " " + event.start.time}</p>
+                <p>{event.location.city}</p>
+            </li>
+            )
+        })
+
         return (
             <div>
-                
+                <ul>
+                    {this.state.eventData.resultsPage && firstTen}
+                </ul>
             </div>
         )
     }
