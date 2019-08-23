@@ -5,7 +5,6 @@ export class Home extends Component {
     render() {
         return (
             <div>
-                <p>home</p>
                 <Songkick />
             </div>
         )

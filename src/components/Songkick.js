@@ -23,7 +23,7 @@ export class Songkick extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.getLocationID();
-    }
+    };
 
 
     getEventData = (id) => {
@@ -32,14 +32,14 @@ export class Songkick extends Component {
         fetch(url).then(response => {
             return response.json();
         }).then(data => {
-            this.setState({ eventData: data, loading: false })
-        })
+            this.setState({ eventData: data, loading: false });
+        });
 
-    }
+    };
 
     getLocationID = () => {
         this.setState( () => { 
-            return { loading: true }
+            return { loading: true };
         });
         const city = this.state.term;
         const url = `https://api.songkick.com/api/3.0/search/locations.json?query=${city}&apikey=pk8dcHXeCupj6Kxr`;
@@ -53,7 +53,7 @@ export class Songkick extends Component {
                 this.getEventData(cityID);
             });
         this.setState({ city, term: ''});
-    }
+    };
     
     render() {
         const firstTwelve = this.state.eventData.resultsPage && this.state.eventData.resultsPage.results.event.filter((event, index) => {
@@ -68,7 +68,7 @@ export class Songkick extends Component {
                 city={event.location.city}
                 key={event.id} />
             )
-        })
+        });
 
         return (
             <div id="main">
