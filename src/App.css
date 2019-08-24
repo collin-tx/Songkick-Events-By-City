@@ -97,3 +97,30 @@ form {
   color: #fff;
   font-size: 1.5rem;
 }
+
+.pageTitle {
+  color: #fff;
+  text-align: center;
+}
+
+.pageInfo {
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.contact-link:hover {
+  color: lightgrey;
+}

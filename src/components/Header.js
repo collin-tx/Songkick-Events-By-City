@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
-import img from "../img/sk.jpg";
+//import img from "../img/sk.jpg";
 
 export class Header extends Component {
     render() {
