@@ -5,7 +5,6 @@ export class Contact extends Component {
         return (
             <div>
                 <h2 className="pageTitle">Contact</h2>
-                <p className="pageInfo">Drop me a line</p>
                 <div className="contact-links">
                     <a href="https://www.linkedin.com/in/collin-miller-smith/" target="_blank" rel="noopener noreferrer" className="btn contact-link"><i className="fab fa-linkedin"></i> LinkedIn</a>
                     <a href="https://github.com/collin-tx" target="_blank" rel="noopener noreferrer" className="btn contact-link"><i className="fab fa-github"></i> GitHub</a>

@@ -1,3 +1,5 @@
+/* Main Page Styles */
+
 html {
   background-color: #343a40;
 }
@@ -47,6 +49,8 @@ header p {
   max-width: 100vw !important;
 }
 
+/* Input */
+
 form {
   height: 50px;
   position: relative;
@@ -72,8 +76,9 @@ form {
 
 #cityName {
   color: #fff;
-
 }
+
+/* Displayed Results */
 
 #list {
   text-decoration: none;
@@ -98,6 +103,8 @@ form {
   font-size: 1.5rem;
 }
 
+/* About/Contact Pages */
+
 .pageTitle {
   color: #fff;
   text-align: center;
@@ -113,6 +120,7 @@ form {
 .contact-links {
   display: flex;
   justify-content: center;
+  margin-top: 15vh;
 }
 
 .contact-link {
@@ -124,6 +132,8 @@ form {
 .contact-link:hover {
   color: lightgrey;
 }
+
+/* Media Queries */
 
 @media(max-width: 1080px){
   #list {
