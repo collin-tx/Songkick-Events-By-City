@@ -10,7 +10,6 @@ html {
   display: flex;
   justify-content: flex-end;
   margin-right: 20px;
-  z-index: 100;
 }
 
 
@@ -30,7 +29,7 @@ header p {
 
 #showcase {
   position: relative;
-  height: 50vh;
+  height: 60vh;
   width: 100vw !important;
   background: url('../src/img/live_music.jpg') no-repeat;
   background-position: 50% 60%;
@@ -81,6 +80,7 @@ form {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   /* grid-column-gap: 10vw; */
 }
 
@@ -123,4 +123,21 @@ form {
 
 .contact-link:hover {
   color: lightgrey;
+}
+
+@media(max-width: 1080px){
+  #list {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}
+
+@media(max-width: 750px){
+  #list {
+    grid-template-columns: 1fr;
+  }
+
+  .event {
+    width: 60vw;
+  }
 }
