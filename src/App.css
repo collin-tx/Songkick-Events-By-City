@@ -6,11 +6,13 @@ html {
   text-align: center;
 }
 
-#nav {
+ #nav {
   display: flex;
   justify-content: flex-end;
   margin-right: 20px;
+  z-index: 100;
 }
+
 
 .navLink{
   color: #fff;
@@ -26,12 +28,6 @@ header p {
   font-size: .7rem;
 }
 
-#sk-logo {
-  height: 5%;
-  width: 5%;
-  margin: 0;
-}
-
 #showcase {
   position: relative;
   height: 50vh;
@@ -39,12 +35,6 @@ header p {
   background: url('../src/img/live_music.jpg') no-repeat;
   background-position: 50% 60%;
   margin-bottom: 30px;
-}
-
-#sk-cred {
-  position: relative;
-  top: -120px;
-
 }
 
 #app-title {
@@ -101,4 +91,9 @@ form {
   background-color: #fff;
   padding: 5px 20px 5px 20px;
   border-radius: 5px;
+}
+
+#loading {
+  color: #fff;
+  font-size: 1.5rem;
 }

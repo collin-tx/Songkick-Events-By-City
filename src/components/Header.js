@@ -9,10 +9,10 @@ export class Header extends Component {
                 <div id="showcase">
                     <Nav />
                     <h1 id="app-title">Music Events by City</h1>
-                    <div id="sk-cred">
+                    {/*<div id="sk-cred">
                         <img alt="songkick logo" id="sk-logo" src={img} />
                         <p>powered by songkick</p>
-                    </div>
+                    </div>*/}
                 </div>
             </header>
         )
