@@ -151,3 +151,10 @@ form {
     width: 60vw;
   }
 }
+
+@media(max-width: 600px){
+  #list {
+    position: relative;
+    left: -20px;
+  }
+}
